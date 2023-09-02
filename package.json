@@ -1,0 +1,22 @@
+{
+  "name": "web-native-ui",
+  "version": "0.0.1",
+  "description": "description",
+  "scripts": {
+    "watch-demo": "ts-node BuildDemo.ts --watch",
+    "watch-tampermonkey": "ts-node BuildTamperMonkey.ts --watch"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "files": [
+    "src/*.css"
+  ],
+  "author": "Soiri Urumi",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.17.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}

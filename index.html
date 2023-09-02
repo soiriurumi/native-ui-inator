@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NativeStyle</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script src="dist/Main.js"></script>
+<body>
+
+<select id="platformSelector">
+</select>
+
+
+<section>
+    <h1>NativeStyle</h1>
+    <p>NativeStyle helps you mimic the style of the native platform.</p>
+
+    <fieldset>
+        <legend>Buttons</legend>
+        <p>Button:</p>
+        <button>Button</button>
+        <button>Sane button but with longer text</button>
+        <button disabled>Button (Disabled)</button>
+        <p>Button (type="submit"):</p>
+        <button type="submit">Submit</button>
+        <button type="submit" disabled>Submit (Disabled)</button>
+        <p>Button (type="reset"):</p>
+        <button type="reset">Reset</button>
+        <button type="reset" disabled>Reset (Disabled)</button>
+        <p>Input (type="button"):</p>
+        <input type="button" value="Input Button">
+        <input type="button" disabled value="Input Button (Disabled)">
+        <p>Input (type="submit"):</p>
+        <input type="submit" value="Input Submit">
+        <input type="submit" disabled value="Input Submit (Disabled)">
+        <p>Input (type="reset"):</p>
+        <input type="reset" value="Input Reset">
+        <input type="reset" disabled value="Input Reset (Disabled)">
+    </fieldset>
+    <fieldset>
+        <legend>Form Elements</legend>
+        <p>Input (type="text"):</p>
+        <input placeholder="Placeholder">
+        <input disabled placeholder="Disabled">
+        <p>Input (type="search"):</p>
+        <input type="search">
+        <input type="search" disabled>
+        <p>Input (type="checkbox"):</p>
+        <input type="checkbox">
+        <input type="checkbox" disabled>
+        <p>Input (type="color"):</p>
+        <input type="color">
+        <input type="color" disabled>
+        <p>Input (type="date"):</p>
+        <input type="date">
+        <input type="date" disabled>
+        <p>Input (type="file"):</p>
+        <input type="file">
+        <input type="file" disabled>
+        <p>Input (type="range"):</p>
+        <input type="range">
+        <input type="range" disabled>
+        <p>Radio Button</p>
+        <input type="radio" name="radio" value="1"> 1
+        <input type="radio" name="radio" value="2"> 2
+        <input type="radio" name="radio" value="3"> 3
+        <input type="radio" name="radio" value="4" disabled> 4
+        <input type="radio" name="radio" value="5" disabled> 5
+        <input type="radio" name="radio" value="6" disabled> 6
+
+
+        <p>Textarea:</p>
+        <textarea></textarea>
+        <textarea disabled></textarea>
+        <p>Select:</p>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>
+        <select disabled>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+        </select>
+        <p>Optgroup:</p>
+        <select>
+            <optgroup label="Group 1">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </optgroup>
+            <optgroup label="Group 2">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+body {
+    background: #f0eff5;
+    caret-color: #167dfa;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: #AAAAAA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+/* Button Outlined */
+button {
+    color: #465d75;
+    background: #e9ecef;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    /*min-width: 64px;*/
+    min-width: 36px;
+    min-height: 32px;
+    vertical-align: middle;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-family: var(-apple-system, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui,);
+    font-weight: 600;
+    -webkit-transition: background-color .5s, -webkit-box-shadow .5s;
+    transition: background-color .5s, -webkit-box-shadow .5s;
+    -o-transition: box-shadow .5s, background-color .5s;
+    transition: box-shadow .5s, background-color .5s;
+    transition: box-shadow .5s, background-color .5s, -webkit-box-shadow .5s;
+}
+
+button::-moz-focus-inner {
+    border: none;
+}
+
+button:active {
+    -webkit-transition: background-color 0s;
+    -o-transition: background-color 0s;
+    transition: background-color 0s;
+    color: #8e8e94;
+    background: #d6d6db;
+}
+
+button:disabled {
+    color: #a4a4a5;
+    background: #f3f3f6;
+}
+
+button[type=submit] {
+    color: #fff;
+    background: #167dfa;
+}
+
+button[type=submit]:active {
+    color: #fff;
+    background: #3f9afd;
+}
+
+button[type=submit]:disabled {
+    color: #fff;
+    background: #a4a4a5;
+}
+
+button[type=reset] {
+    color: #167dfa;
+    background: transparent;
+}
+
+button[type=reset]:active {
+    color: #3f9afd;
+    background: rgba(33, 150, 243, 0.12);
+}
+
+button[type=reset]:disabled {
+    color: #a4a4a5;
+    background: transparent;
+}
+
+input[type=button] {
+    color: #167dfa;
+    background: #e7eaee;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+input[type=button]:active {
+    color: #3f9afd;
+    background: #d6d6db;
+    outline: none;
+}
+
+input[type=button]:focus {
+    outline: none;
+}
+
+input[type=button]:disabled {
+    color: #a4a4a5;
+    background: #f3f3f6;
+    outline: none;
+}
+
+input[type=submit] {
+    color: #167dfa;
+    background: #d3e4fc;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+input[type=submit]:active {
+    color: #2d90fe;
+    background: rgb(178, 213, 254);
+    outline: none;
+}
+
+input[type=submit]:focus {
+    outline: none;
+}
+
+input[type=submit]:disabled {
+    color: #a4a4a5;
+    background: #f3f3f6;
+    outline: none;
+}
+
+input[type=reset] {
+    font-weight: normal;
+    color: #167dfa;
+    background: transparent;
+    border: #e3e3e3 solid 2px;
+    min-height: 32px;
+    border-radius: 16px;
+    outline: none;
+}
+
+input[type=reset]:active {
+    color: #2d90fe;
+    background: rgba(33, 150, 243, 0.12);
+    outline: none;
+}
+
+input[type=reset]:focus {
+    outline: none;
+}
+
+input[type=reset]:disabled {
+    color: #b2d5fe;
+    border: #eeeeee solid 2px;
+    background: transparent;
+    outline: none;
+}
+
+
+/* input */
+input {
+    /*outline: #aab6c3 solid 1px;*/
+    border: none;
+    /*outline: #aab6c3 solid 1px;*/
+    border-radius: 8px;
+    padding: 0 16px;
+    min-width: 64px;
+    min-height: 36px;
+    background: #e2e1e8;
+    transition: background-color .5s;
+    font-weight: 500;
+}
+
+input:disabled {
+    color: #a4a4a5;
+}
+
+input:focus {
+    /*transition: outline-color 0.2s;*/
+    background: #eeeeee;
+    outline: none;
+
+    /*outline: #167dfa solid 2px;*/
+}
+
+input[type=checkbox] {
+    appearance: none;
+    outline: none;
+    border: 1px solid #e3e3e3;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    min-height: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+
+    transition: background-color .2s, border-color .2s;
+}
+
+input[type=checkbox]:checked {
+    background-color: #167dfa;
+    border: 1px solid #167dfa;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M9.172 16.242l-4.95-4.95-1.414 1.414 6.364 6.364 12-12-1.414-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+}
+
+input[type=checkbox]:disabled {
+    background-color: #f3f3f6;
+    border: 1px solid #e3e3e3;
+}
+
+
+input[type=color] {
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    clip-path: circle(40%);
+    outline: none;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    left: 10px;
+    top: 10px;
+}
+
+input[type=color]:disabled::-webkit-color-swatch-wrapper {
+    background-color: #f3f3f6;
+}
+
+input[type=file] {
+    appearance: none;
+    outline: none;
+    border: none;
+    transition: background-color .2s;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    appearance: none;
+    font-weight: normal;
+    padding: 0 16px;
+    color: #167dfa;
+    background: transparent;
+    border: #e3e3e3 solid 2px;
+    min-height: 32px;
+    border-radius: 16px;
+    outline: none;
+}
+
+input[type=file]::-webkit-file-upload-button:active {
+    color: #2d90fe;
+    background: rgba(33, 150, 243, 0.12);
+    outline: none;
+}
+
+input[type=file]:disabled::-webkit-file-upload-button {
+    background-color: #f3f3f6;
+    color: #a4a4a5;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    padding: 0;
+    min-height: 0;
+    /*min-width: 1px;*/
+    box-shadow: none;
+    height: 0.3em;
+    border: none;
+    border-radius: 0px;
+    background: #e3e3e3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.30), 0px 1px 2px rgba(0, 0, 0, .4);
+    background: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:active::-webkit-slider-thumb {
+    background: linear-gradient(#f3f3f6, #f3f3f6);
+}
+
+input[type=range]:disabled::-webkit-slider-thumb {
+    /*background: #f3f3f6;*/
+    cursor: default;
+    background: none;
+    box-shadow: none;
+}
+
+
+input[type="radio"] {
+    box-shadow: none;
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+
+    min-width: 0;
+    min-height: 0;
+    padding: 0px;
+    /*margin: 1px;*/
+    border: none;
+    outline: none;
+}
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    border: 2px solid #ffffff;
+    outline: 2px solid #e1e1e2;
+    transition: background-color .2s, border-color .2s;
+}
+
+input[type='radio']:checked:after {
+    background-color: #1879fe;
+    content: '';
+    border: 2px solid #ffffff;
+    outline: 2px solid #1879fe;
+}
+
+input[type='radio']:disabled:after {
+    background-color: #f3f3f6;
+    content: '';
+    border: 2px solid #e3e3e3;
+    outline: 2px solid #e3e3e3;
+}
+
+textarea{
+    /*resize: none;*/
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+textarea:disabled{
+    background-color: #f3f3f6;
+}
+
+select{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+fieldset {
+    margin-top: 20pt;
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    border: none;
+}
+
+fieldset legend {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 10pt;
+    font-weight: 600;
+    color: #84838b;
+    text-transform: uppercase;
+}
